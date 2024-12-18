@@ -138,7 +138,18 @@ const LandingPage = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    // <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div
+      style={{
+        textAlign: "center", 
+        marginTop: "50px",
+        color:"white",
+        backgroundImage: `url(${process.env.PUBLIC_URL + '/background.jpg'})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100vh',
+      }}
+    >
       <h1>Welcome to Riding/Cost Looker</h1>
       <p>Select Your Riding:</p>
 
@@ -282,7 +293,7 @@ const LandingPage = () => {
       </select>
 
       {/* Display message based on the selection */}
-      <div style={{ marginTop: "20px", fontSize: "18px", fontWeight: "bold" }}>
+      <div style={{ color:"white", marginTop: "20px", fontSize: "18px", fontWeight: "bold" }}>
         {selectedOption && messages[selectedOption]}
       </div>
     </div>
