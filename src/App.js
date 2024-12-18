@@ -141,7 +141,7 @@ const LandingPage = () => {
     // <div style={{ textAlign: "center", marginTop: "50px" }}>
     <div
       style={{
-        textAlign: "center", 
+        textAlign: "center",
         marginTop: "50px",
         color:"white",
         backgroundImage: `url(${process.env.PUBLIC_URL + '/background.jpg'})`,
